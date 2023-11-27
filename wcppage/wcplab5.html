@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign-Up </title>
+<style type="text/css">
+h2 {
+    color: #0D0D0D;
+}
+body {
+    background-color: red;
+}
+form {
+    background-color: white;
+    color: red;
+}
+h2 {
+}
+</style>
+</head>
+
+<body>
+<h1>Sign Up Form for Broker's Gym Membership</h1>
+	
+<form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
+	<h2>Personal Info.</h2>
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" required="required" id="firstname">
+		<br>
+		<label for="lastname">Last Name</label>
+	  <input type="text" name="lastname" required="required" id="lastname">
+	<br>
+	  <label for="username">Username</label>
+	<input name="username" type="text" required="required" id="username" pattern="[A-Za-z]{6,10}" >
+		<br>
+	  <label for="password">Password</label>
+	<input name="password" type="password" required="required" id="password" pattern="[0-9A-Za-z]{6,10}">
+		<br>
+	<label for="dateofbirth">Date of Birth</label>
+	<input name="dateofbirth" type="date" required="required" id="dateofbirth">
+		<br>
+		<label for="phonenumber">Phone Number</label>
+	<input name="phonenumber" type="tel" required="required" id="phonenumber" pattern="[0-9]{10}">
+		<br>
+		<label for="email">Email</label>
+	<input name="email" type="email" required="required" id="email">
+		<br>
+		<label for="pweb">Personal Website</label>
+	<input name="pweb" type="url" id="pweb">
+		<br>
+		<h2>Interest</h2>
+
+  <label for="drawing">Drawing</label>
+	<input name="drawing" input type="checkbox" id="drawing">
+		<br>
+		<label for="music">Music</label>
+	<input name="music" input type="checkbox"  id="music">
+		<br>
+  <label for="Vgames">Video Games</label>
+  <input name="Vgames" input type="checkbox" id="Vgames">
+		<br>
+		<label for="code">Coding</label>
+  <input name="code" input type="checkbox"  id="code">
+		<br>
+<h2>Where did you here about our Gym</h2>
+  <label for="friend">A friend</label>
+  <input name="friend" input type="radio"  id="friend">
+		<br>
+		<label for="friend">A billboard</label>
+	<input name="promo" input type="radio"  id="promo">
+		<br>
+		<label for="friend">On TV</label>
+	<input name="tvpromo" input type="radio"  id="tvpromo">
+		<br>
+		<label for="friend">On Your Phone</label>
+	<input name="phonepromo" input type="radio"  id="phonepromo">
+		<br>
+  <input type="submit">
+	  <input type="reset">
+	</form>
+</body>
+</html>
